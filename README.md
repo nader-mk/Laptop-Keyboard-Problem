@@ -1,6 +1,6 @@
 # Laptop Keyboard Problem Solver
 
-A lightweight, no-install Windows utility ***to disable specific keys on your keyboard***. Ideal for situations where a laptop key is **malfunctioning, broken, or continuously pressing itself.**
+A lightweight, no-install Windows utility **to disable specific keys on your keyboard**. Ideal for situations where a laptop key is **malfunctioning, broken, or continuously pressing itself.**
 
 ## The Problem
 
