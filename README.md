@@ -8,15 +8,15 @@ Have you ever had a key on your laptop keyboard go haywire? It might get stuck, 
 
 # Features
 
-Selective Key Blocking: Disable only the keys that are causing problems.
-Configuration via Text File: Easily add or remove keys to block by editing a simple .cfg file.
-System Tray Control: Runs silently in the system tray. Right-click the icon to access all options.
-Toggle On/Off: Quickly enable or disable the key blocking without closing the application.
-Reload Configuration: Update the list of blocked keys on-the-fly without a restart.
-Portable: No installation required. Just run the .exe file.
-Lightweight: Minimal resource consumption.
+**Selective Key Blocking:** Disable only the keys that are causing problems.
+**Configuration via Text File:** Easily add or remove keys to block by editing a simple .cfg file.
+**System Tray Control:** Runs silently in the system tray. Right-click the icon to access all options.
+**Toggle On/Off:** Quickly enable or disable the key blocking without closing the application.
+**Reload Configuration:** Update the list of blocked keys on-the-fly without a restart.
+**Portable:** No installation required. Just run the .exe file.
+**Lightweight:** Minimal resource consumption.
 
-How to Use
+# How to Use
 
     Get the Executable:
         Download the latest main.exe from the Releases page of this repository.
