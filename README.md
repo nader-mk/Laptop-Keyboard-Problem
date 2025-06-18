@@ -57,10 +57,8 @@ Use # to add comments.
             Exit: Closes the application.
         Double-click the tray icon as a shortcut to the "About" dialog.
 
-Available Keys to Block
-
+## Available Keys to Block
 You can block a wide variety of keys. Use the following names in your Nader.cfg file (they are not case-sensitive).
-
     Letters: A - Z
     Numbers: 0 - 9
     Function Keys: F1 - F12
@@ -68,8 +66,8 @@ You can block a wide variety of keys. Use the following names in your Nader.cfg 
     Control Keys: SPACE, ENTER, TAB, BACKSPACE, DELETE, INSERT, HOME, END, PAGEUP, PAGEDOWN, UP, DOWN, LEFT, RIGHT
     Modifier Keys: ESCAPE, CAPSLOCK, SHIFT, CTRL, ALT, LWIN, RWIN
     Special Characters: -, =, [, ], \, ;, ', ,, ., /, `
-
-Building from Source
+    
+## Building from Source
 
 To compile the application yourself, you'll need a C++ compiler that supports the Win32 API, such as MinGW-w64 (part of the MSYS2 toolchain).
 
