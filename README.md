@@ -24,22 +24,22 @@ Have you ever had a key on your laptop keyboard go haywire? It might get stuck, 
 
 # How to Use
 
-    Get the Executable:
+## Get the Executable:
         Download the latest main.exe from the Releases page of this repository.
         OR build it from source.
 
-    Run the Application:
+## Run the Application:
         Double-click main.exe.
         You will see a confirmation message, and a new icon will appear in your system tray (notification area).
 
-    Configure the Blocked Keys:
+## Configure the Blocked Keys:
         The application looks for a configuration file named Nader.cfg on your Desktop.
         If the file doesn't exist, the application will automatically create a default one for you on your Desktop.
         Open Nader.cfg with any text editor (like Notepad).
         Add the names of the keys you want to block, one key per line.
         Use # to add comments.
 
-    Example Nader.cfg:
+## Example Nader.cfg:
     Code snippet
 
     # This is a comment.
@@ -49,7 +49,7 @@ Have you ever had a key on your laptop keyboard go haywire? It might get stuck, 
     -
     F5
 
-    Control from the System Tray:
+## Control from the System Tray:
         Right-click the tray icon to open the context menu:
             Enable/Disable Blocking: Toggles the key blocking functionality. The icon's tooltip will update to show the current status ("Active" or "Inactive").
             Reload Config: Applies any changes you've made to Nader.cfg instantly.
