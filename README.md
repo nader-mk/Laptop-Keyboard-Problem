@@ -5,15 +5,16 @@ A lightweight, no-install Windows utility **to disable specific keys on your key
 ## The Problem
 
 Have you ever had a key on your laptop keyboard go haywire? It might get stuck, start typing on its own, or become overly sensitive. This can make your computer unusable, especially if it's a critical key like a letter, number, or modifier. This tool provides a simple and effective software solution to this common hardware problem by letting you completely block any problematic keys.
-Features
 
-    Selective Key Blocking: Disable only the keys that are causing problems.
-    Configuration via Text File: Easily add or remove keys to block by editing a simple .cfg file.
-    System Tray Control: Runs silently in the system tray. Right-click the icon to access all options.
-    Toggle On/Off: Quickly enable or disable the key blocking without closing the application.
-    Reload Configuration: Update the list of blocked keys on-the-fly without a restart.
-    Portable: No installation required. Just run the .exe file.
-    Lightweight: Minimal resource consumption.
+# Features
+
+Selective Key Blocking: Disable only the keys that are causing problems.
+Configuration via Text File: Easily add or remove keys to block by editing a simple .cfg file.
+System Tray Control: Runs silently in the system tray. Right-click the icon to access all options.
+Toggle On/Off: Quickly enable or disable the key blocking without closing the application.
+Reload Configuration: Update the list of blocked keys on-the-fly without a restart.
+Portable: No installation required. Just run the .exe file.
+Lightweight: Minimal resource consumption.
 
 How to Use
 
