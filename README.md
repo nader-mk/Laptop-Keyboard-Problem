@@ -51,21 +51,26 @@ Use # to add comments.
 
 ## Control from the System Tray:
 Right-click the tray icon to open the context menu:
+
 **Enable/Disable Blocking:** Toggles the key blocking functionality. The icon's tooltip will update to show the current status ("Active" or "Inactive").
+
 **Reload Config:** Applies any changes you've made to Nader.cfg instantly.
+
 **About:** Shows version info and a list of currently blocked keys.
+
 **Exit:** Closes the application.
-Double-click the tray icon as a shortcut to the **"About"** dialog.
+
+***Double-click the tray icon as a shortcut to the **"About"** dialog.***
 
 ## Available Keys to Block
 You can block a wide variety of keys. Use the following names in your Nader.cfg file (they are not case-sensitive).
-    Letters: A - Z
-    Numbers: 0 - 9
-    Function Keys: F1 - F12
-    Numpad: NUMPAD0 - NUMPAD9, *, +, NUMPAD-, NUMPAD., NUMPAD/
-    Control Keys: SPACE, ENTER, TAB, BACKSPACE, DELETE, INSERT, HOME, END, PAGEUP, PAGEDOWN, UP, DOWN, LEFT, RIGHT
-    Modifier Keys: ESCAPE, CAPSLOCK, SHIFT, CTRL, ALT, LWIN, RWIN
-    Special Characters: -, =, [, ], \, ;, ', ,, ., /, `
+**Letters:** A - Z
+**Numbers:** 0 - 9
+**Function Keys:** F1 - F12
+**Numpad:** NUMPAD0 - NUMPAD9, *, +, NUMPAD-, NUMPAD., NUMPAD/
+**Control Keys:** SPACE, ENTER, TAB, BACKSPACE, DELETE, INSERT, HOME, END, PAGEUP, PAGEDOWN, UP, DOWN, LEFT, RIGHT
+**Modifier Keys:** ESCAPE, CAPSLOCK, SHIFT, CTRL, ALT, LWIN, RWIN
+**Special Characters:** -, =, [, ], \, ;, ', ,, ., /, `
     
 ## Building from Source
 
