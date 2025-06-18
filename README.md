@@ -64,41 +64,47 @@ Right-click the tray icon to open the context menu:
 
 ## Available Keys to Block
 You can block a wide variety of keys. Use the following names in your Nader.cfg file (they are not case-sensitive).
+
 **Letters:** A - Z
+
 **Numbers:** 0 - 9
+
 **Function Keys:** F1 - F12
+
 **Numpad:** NUMPAD0 - NUMPAD9, *, +, NUMPAD-, NUMPAD., NUMPAD/
+
 **Control Keys:** SPACE, ENTER, TAB, BACKSPACE, DELETE, INSERT, HOME, END, PAGEUP, PAGEDOWN, UP, DOWN, LEFT, RIGHT
+
 **Modifier Keys:** ESCAPE, CAPSLOCK, SHIFT, CTRL, ALT, LWIN, RWIN
+
 **Special Characters:** -, =, [, ], \, ;, ', ,, ., /, `
+
     
 ## Building from Source
 
-To compile the application yourself, you'll need a C++ compiler that supports the Win32 API, such as MinGW-w64 (part of the MSYS2 toolchain).
+To compile the application yourself, ***you'll need a C++ compiler that supports the Win32 API, such as MinGW-w64 (part of the MSYS2 toolchain)***.
 
-    Prerequisites:
-        Install MinGW-w64.
-        Ensure g++ is in your system's PATH.
+### Prerequisites:
+Install MinGW-w64.
+Ensure g++ is in your system's PATH.
 
-    Clone the Repository:
-    Bash
-
+### Clone the Repository:
 git clone https://github.com/your-username/Laptop-Keyboard-Problem.git
 cd Laptop-Keyboard-Problem
 
-Compile:
+### Compile:
+
 Open your terminal or command prompt in the project directory and run the following command:
-Bash
 
     g++ -o main.exe main.cpp -luser32 -lshell32 -lole32 -mwindows -static-libgcc -static-libstdc++
 
     This will create main.exe in the current directory.
 
-Dependencies
+### Dependencies
 
     OS: Windows
     Libraries (linked during build): user32, shell32, ole32
 
-License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
