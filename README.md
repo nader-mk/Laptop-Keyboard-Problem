@@ -89,7 +89,7 @@ Install MinGW-w64.
 Ensure g++ is in your system's PATH.
 
 ### Clone the Repository:
-    git clone [https://github.com/your-username/Laptop-Keyboard-Problem.git](https://github.com/nader-mk/Laptop-Keyboard-Problem/)
+    git clone https://github.com/nader-mk/Laptop-Keyboard-Problem/
     cd Laptop-Keyboard-Problem
 
 ### Compile:
