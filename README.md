@@ -1,14 +1,94 @@
-# Laptop-Keyboard-Problem
-In case you are poor enough to repair your laptop keyboard, then follow this repo.
-A lightweight, background utility for Windows that blocks specific keyboard keys. Ideal for situations where a laptop key is malfunctioning or you need to temporarily disable certain keys for a specific purpose. The application runs silently in the system tray and is configured via a simple text file on your desktop.FeaturesSystem Tray Icon: Runs discreetly in the system tray.Dynamic Configuration: Specify which keys to block by editing a simple .cfg file. No need to recompile.Reload on the Fly: Right-click the tray icon to reload your configuration without restarting the application.Toggle Blocking: Easily enable or disable the key blocking functionality from the tray menu.About Dialog: Quickly see which keys are currently being blocked.Lightweight: Uses minimal system resources.Single Instance: Prevents multiple copies of the application from running.How It WorksThe application uses a low-level Windows keyboard hook (WH_KEYBOARD_LL) to intercept keystrokes before they are processed by other applications. It checks each keypress against a user-defined list and blocks it if it finds a match.Installation & UsageDownload: Go to the Releases page of this repository and download the latest main.exe file.Run: Double-click main.exe to start the application. You will see a confirmation message and a new icon will appear in your system tray.Configure: The application will automatically create a configuration file named Nader.cfg on your Desktop. Open this file with any text editor to add or remove keys you wish to block.Manage: Right-click the tray icon to:Enable/Disable Blocking: Toggle the key blocking on or off.Reload Config: Apply any changes you've made to Nader.cfg.About: View the program version and the list of currently blocked keys.Exit: Close the application.Configuration (Nader.cfg)The Nader.cfg file is a plain text file where you list the keys to be blocked, one key per line. Lines starting with # are ignored as comments.Example Nader.cfg:# This is a comment.
-# I want to block the '7', '8', and '-' keys because they are broken.
-7
-8
--
+Laptop Keyboard Problem Solver
 
-# I also want to disable the Caps Lock key
-CAPSLOCK
-Supported Key NamesThe following key names can be used in your configuration file. The names are case-insensitive.CategoryKeysLettersA - ZNumbers0 - 9Function KeysF1 - F12NumpadNUMPAD0 - NUMPAD9, *, +, NUMPAD-, NUMPAD., NUMPAD/Control KeysDELETE, INSERT, HOME, END, PAGEUP, PAGEDOWN, UP, DOWN, LEFT, RIGHTModifiersESCAPE, CAPSLOCK, SHIFT, CTRL, ALT, LWIN, RWINSpecial Chars-, =, [, ], \, ;, ', ,, ., /, `OtherSPACE, ENTER, TAB, BACKSPACEBuilding from SourceIf you prefer to compile the application yourself, you will need a C++ compiler that supports the Windows API (like MinGW/g++).Prerequisites: Install MinGW-w64.Clone the repository:git clone https://github.com/your-username/your-repo.git
-cd your-repo
-Compile:Use the following command in your terminal. This command links the necessary libraries and creates a standalone executable that doesn't depend on external .dll files.g++ -o main.exe main.cpp -luser32 -lshell32 -lole32 -mwindows -static-libgcc -static-libstdc++
-LicenseThis project is licensed under the MIT License. See the LICENSE file for details.
+A lightweight, no-install Windows utility to disable specific keys on your keyboard. Ideal for situations where a laptop key is malfunctioning, broken, or continuously pressing itself.
+
+## The Problem
+
+Have you ever had a key on your laptop keyboard go haywire? It might get stuck, start typing on its own, or become overly sensitive. This can make your computer unusable, especially if it's a critical key like a letter, number, or modifier. This tool provides a simple and effective software solution to this common hardware problem by letting you completely block any problematic keys.
+Features
+
+    Selective Key Blocking: Disable only the keys that are causing problems.
+    Configuration via Text File: Easily add or remove keys to block by editing a simple .cfg file.
+    System Tray Control: Runs silently in the system tray. Right-click the icon to access all options.
+    Toggle On/Off: Quickly enable or disable the key blocking without closing the application.
+    Reload Configuration: Update the list of blocked keys on-the-fly without a restart.
+    Portable: No installation required. Just run the .exe file.
+    Lightweight: Minimal resource consumption.
+
+How to Use
+
+    Get the Executable:
+        Download the latest main.exe from the Releases page of this repository.
+        OR build it from source.
+
+    Run the Application:
+        Double-click main.exe.
+        You will see a confirmation message, and a new icon will appear in your system tray (notification area).
+
+    Configure the Blocked Keys:
+        The application looks for a configuration file named Nader.cfg on your Desktop.
+        If the file doesn't exist, the application will automatically create a default one for you on your Desktop.
+        Open Nader.cfg with any text editor (like Notepad).
+        Add the names of the keys you want to block, one key per line.
+        Use # to add comments.
+
+    Example Nader.cfg:
+    Code snippet
+
+    # This is a comment.
+    # The keys below are broken on my laptop.
+    7
+    8
+    -
+    F5
+
+    Control from the System Tray:
+        Right-click the tray icon to open the context menu:
+            Enable/Disable Blocking: Toggles the key blocking functionality. The icon's tooltip will update to show the current status ("Active" or "Inactive").
+            Reload Config: Applies any changes you've made to Nader.cfg instantly.
+            About: Shows version info and a list of currently blocked keys.
+            Exit: Closes the application.
+        Double-click the tray icon as a shortcut to the "About" dialog.
+
+Available Keys to Block
+
+You can block a wide variety of keys. Use the following names in your Nader.cfg file (they are not case-sensitive).
+
+    Letters: A - Z
+    Numbers: 0 - 9
+    Function Keys: F1 - F12
+    Numpad: NUMPAD0 - NUMPAD9, *, +, NUMPAD-, NUMPAD., NUMPAD/
+    Control Keys: SPACE, ENTER, TAB, BACKSPACE, DELETE, INSERT, HOME, END, PAGEUP, PAGEDOWN, UP, DOWN, LEFT, RIGHT
+    Modifier Keys: ESCAPE, CAPSLOCK, SHIFT, CTRL, ALT, LWIN, RWIN
+    Special Characters: -, =, [, ], \, ;, ', ,, ., /, `
+
+Building from Source
+
+To compile the application yourself, you'll need a C++ compiler that supports the Win32 API, such as MinGW-w64 (part of the MSYS2 toolchain).
+
+    Prerequisites:
+        Install MinGW-w64.
+        Ensure g++ is in your system's PATH.
+
+    Clone the Repository:
+    Bash
+
+git clone https://github.com/your-username/Laptop-Keyboard-Problem.git
+cd Laptop-Keyboard-Problem
+
+Compile:
+Open your terminal or command prompt in the project directory and run the following command:
+Bash
+
+    g++ -o main.exe main.cpp -luser32 -lshell32 -lole32 -mwindows -static-libgcc -static-libstdc++
+
+    This will create main.exe in the current directory.
+
+Dependencies
+
+    OS: Windows
+    Libraries (linked during build): user32, shell32, ole32
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
