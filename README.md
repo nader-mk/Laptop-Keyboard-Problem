@@ -50,12 +50,12 @@ Use # to add comments.
     F5
 
 ## Control from the System Tray:
-        Right-click the tray icon to open the context menu:
-            Enable/Disable Blocking: Toggles the key blocking functionality. The icon's tooltip will update to show the current status ("Active" or "Inactive").
-            Reload Config: Applies any changes you've made to Nader.cfg instantly.
-            About: Shows version info and a list of currently blocked keys.
-            Exit: Closes the application.
-        Double-click the tray icon as a shortcut to the "About" dialog.
+Right-click the tray icon to open the context menu:
+**Enable/Disable Blocking:** Toggles the key blocking functionality. The icon's tooltip will update to show the current status ("Active" or "Inactive").
+**Reload Config:** Applies any changes you've made to Nader.cfg instantly.
+**About:** Shows version info and a list of currently blocked keys.
+**Exit:** Closes the application.
+Double-click the tray icon as a shortcut to the **"About"** dialog.
 
 ## Available Keys to Block
 You can block a wide variety of keys. Use the following names in your Nader.cfg file (they are not case-sensitive).
