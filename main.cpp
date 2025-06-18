@@ -99,7 +99,7 @@ std::string ToUpper(const std::string& str) {
 void CreateDefaultConfig() {
     std::ofstream file(g_configPath);
     if (file.is_open()) {
-        file << "# Keyboard Blocker Configuration File\n";
+        file << "# Nader Keyboard Manager Blocker Configuration File\n";
         file << "# Add one key per line\n";
         file << "# Available keys:\n";
         file << "# - Numbers: 0-9\n";
