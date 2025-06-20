@@ -277,7 +277,7 @@ void ShowContextMenu(HWND hwnd) {
 // Show about dialog
 void ShowAboutDialog(HWND hwnd) {
     std::stringstream ss;
-    ss << "Keyboard Blocker v1.0\n\n";
+    ss << "NaderKeyboardHook v1.0\n\n";
    ss << "Developed by Nader Mahbub Khan (c) 2025\nBachelor of Arts (English)(Hons.), National University, Bangladesh\n";
     ss << "Configuration file: " << g_configPath << "\n\n";
     ss << "Currently blocked keys:\n";
