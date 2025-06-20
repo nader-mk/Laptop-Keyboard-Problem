@@ -1,0 +1,52 @@
+name: Build NaderKeyboardHook
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup MinGW
+      uses: egor-tensin/setup-mingw@v2
+      with:
+        platform: x64
+        version: 12.2.0
+    
+    - name: Build executable
+      run: |
+        g++ -o NaderKeyboardHook.exe main.cpp -luser32 -lshell32 -lole32 -mwindows -static-libgcc -static-libstdc++
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: NaderKeyboardHook
+        path: NaderKeyboardHook.exe
+        retention-days: 30
+
+  release:
+    needs: build
+    runs-on: windows-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: NaderKeyboardHook
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: NaderKeyboardHook.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
